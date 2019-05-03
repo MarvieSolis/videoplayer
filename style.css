@@ -1,0 +1,131 @@
+.container {
+    border: 1px solid black;
+    width: 50%;
+    min-width: 480px;
+    padding: 0;
+    margin: 0;
+
+    transition: all 0.2s;
+}
+
+
+.videoplayer {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+
+#video {
+    width: 100%;
+}
+
+#playScreen {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    color: white;
+    text-shadow: 2px 2px #444444;
+    font-size: 30px;
+    visibility: hidden;
+
+    transition: opacity 1s;
+}
+
+#pauseScreen {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    color: white;
+    text-shadow: 2px 2px #444444;
+    font-size: 30px;
+    visibility: hidden;
+
+
+    transition: opacity 1s;
+}
+
+.videoOverlay {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: translateY(40px);
+
+    transition: all 0.3s;
+}
+
+
+#leftCtrl {
+    float: left;
+    margin-left: 5px;
+}
+
+#rightCtrl {
+    float: right;
+    margin-right: 5px;
+}
+
+.progressContainer {
+    height: 5px;
+    width: 100%;
+    background-color: #444444;
+
+    transition: height 0.3s;
+}
+
+.progressBar {
+    height: 100%;
+    width: 0%;
+    background-color: teal;
+}
+
+.ctrlBtn {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    line-height: 40px;
+    vertical-align: middle;
+    color: #FFFFFF;
+    text-shadow: 1px 1px #000000;
+
+
+    transition: 1s;
+}
+
+.ctrlBtn:hover {
+    color: teal;
+}
+
+#volumeStatus {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    line-height: 40px;
+    vertical-align: middle;
+    color: #FFFFFF;
+    text-shadow: 1px 1px #000000;
+
+}
+
+#videoTime {
+    display: inline-block;
+    line-height: 40px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 10px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px #000000;
+}
